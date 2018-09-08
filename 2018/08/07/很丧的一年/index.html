@@ -112,7 +112,7 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="写下第一篇博客给很咸鱼的我自己">
 <meta property="og:url" content="http://yoursite.com/2018/08/07/很丧的一年/index.html">
-<meta property="og:site_name" content="心中要有光">
+<meta property="og:site_name" content="我可没让你看">
 <meta property="og:description" content="不知道自己今年是怎么了，总觉得很丧。大概是年初爸妈送我出来的时候埋下的种子吧。像我这把年纪混成这样也是很糟糕啊大概是这种状态吧。不知道自己什么时候可以脱离这种状态。总想学点什么，又总是三分钟热度。很糟糕的一个人吧，对啊是挺糟糕的，可23年不都这样过来了吗。但是总要试着改变一下吧，挣扎一下吧。懒惰墨迹的人啊。脑子是个好东西我也希望你有一个啊。暂时对程序猴这个职业比较感兴趣，也不知道自己可以坚持多久，">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2018-08-07T11:54:30.302Z">
@@ -135,7 +135,7 @@
   };
 </script>
 
-  <title>写下第一篇博客给很咸鱼的我自己 | 心中要有光</title>
+  <title>写下第一篇博客给很咸鱼的我自己 | 我可没让你看</title>
   
 
 
@@ -193,7 +193,7 @@
     <div class="custom-logo-site-title">
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">心中要有光</span>
+        <span class="site-title">我可没让你看</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -287,13 +287,13 @@
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/07/很丧的一年/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="汤某某">
+      <meta itemprop="name" content="心中要有光">
       <meta itemprop="description" content="糟糕是心动的感觉">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="心中要有光">
+      <meta itemprop="name" content="我可没让你看">
     </span>
 
     
@@ -439,9 +439,9 @@
             
               <img class="site-author-image" itemprop="image"
                 src="/images/avatar.gif"
-                alt="汤某某" />
+                alt="心中要有光" />
             
-              <p class="site-author-name" itemprop="name">汤某某</p>
+              <p class="site-author-name" itemprop="name">心中要有光</p>
               <p class="site-description motion-element" itemprop="description">糟糕是心动的感觉</p>
           </div>
 
@@ -500,7 +500,7 @@
   <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">汤某某</span>
+  <span class="author" itemprop="copyrightHolder">心中要有光</span>
 
   
 
@@ -641,6 +641,9 @@
 
   <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
   <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+  
+  <script src="/js/src/md5.min.js"></script>
+  
    <script type="text/javascript">
         var gitalk = new Gitalk({
           clientID: '4bb2542f76dceb9dd724',
@@ -648,7 +651,8 @@
           repo: 'outh.github.io',
           owner: 'outh',
           admin: ['outh'],
-          id: location.pathname,
+		  
+		  id：md5(location.pathname),
           distractionFreeMode: 'true'
         })
         gitalk.render('gitalk-container')           
